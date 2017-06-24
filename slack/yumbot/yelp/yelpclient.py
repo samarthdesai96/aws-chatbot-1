@@ -1,4 +1,5 @@
 import requests
+from yelpresponse import YelpResponse
 from urllib import quote
 from urllib import urlencode
 
@@ -15,30 +16,49 @@ class YelpClient(object):
         self.client_id = client_id
         self.client_secret = client_secret
 
-    def _obtain_bearer_token(self, host, path):
-        url = '{0}{1}'.format(host, quote(path.encode('utf8')))
+    # Private helper function to retrieve the OAuth access_token
+    def _obtain_bearer_token(self):
+        url = '{0}{1}'.format(BASE_URL, quote(TOKEN_PATH.encode('utf8')))
+
         assert self.client_id, 'Please supply your client_id'
         assert self.client_secret, 'Please supply your client_secret'
+
         data = urlencode({
             'client_id': self.client_id,
-            'client_secret': self.client_id,
+            'client_secret': self.client_secret,
             'grant_type': GRANT_TYPE,
         })
         headers = {
-            'Content-Type': 'application/x-form-urlencoded',
+            'Content-Type': 'application/x-www-form-urlencoded',
         }
 
         response = requests.request('POST', url, data=data, headers=headers)
+        print('Response: ' + response.content)
         bearer_token = response.json()['access_token']
         return bearer_token
 
-    def _get_request(self, host, path, bearer_token, url_params=None):
+    # Private helper function to send HTTP requests
+    def _get_request(self, path, url_params=None):
         url_params = url_params or {}
-        url = '{0}{1}'.format(host, quote(path.encode('utf8')))
+        url = '{0}{1}'.format(BASE_URL, quote(path.encode('utf8')))
+
+        bearer_token = self._obtain_bearer_token()
         headers = {
             'Authorization': 'Bearer %s' % bearer_token,
         }
 
+        print("Making request to: " + url)
         response = requests.request('GET', url, headers=headers, params=url_params)
         return response.json()
 
+    def get_business(self, business_id):
+        path = BUSINESS_PATH + business_id
+
+        print("Searching for business: " + business_id)
+        response = self._get_request(path)
+        yelp_response = YelpResponse(response['id'], response['name'], response['image_url'],
+                                     response['is_closed'], response['url'], response['price'],
+                                     response['rating'], response['review_count'], response['phone'],
+                                     response['photos'], response['hours'], response['categories'],
+                                     response['location'], response['transactions'])
+        return yelp_response

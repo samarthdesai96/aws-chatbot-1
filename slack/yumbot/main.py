@@ -1,8 +1,10 @@
 import os
 from slackclient import SlackClient
+from yelp.yelpclient import YelpClient
 
 BOT_NAME = 'yumbot'
 
+yelp_client = YelpClient(os.environ.get('YELP_CLIENT_ID'), os.environ.get('YELP_CLIENT_SECRET'))
 slack_client = SlackClient(os.environ.get('SLACK_BOT_TOKEN'))
 
 '''
@@ -55,6 +57,7 @@ def parse_slack_output(slack_rtm_output):
     return None, None
 
 if __name__ == "__main__":
+    print(yelp_client.get_business('gary-danko-san-francisco'))
     READ_WEBSOCKET_DELAY = 1 # 1 second delay between reading from firehose
     if slack_client.rtm_connect():
         print("StarterBot connected and running!")
