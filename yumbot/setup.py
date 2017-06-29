@@ -4,14 +4,14 @@ setup(
     name='yumbot',
     version='',
     packages=[''],
-    package_dir={'': 'slack/yumbot'},
+    package_dir={'': 'yumbot'},
     url='',
     license='',
     author='Dale',
     author_email='',
     description='',
     install_requires=[
-        'slackclient',
-        'requests'
+        'requests',
+        'boto3'
     ]
 )

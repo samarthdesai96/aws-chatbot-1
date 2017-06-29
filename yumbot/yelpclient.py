@@ -1,5 +1,4 @@
 import requests
-from yelpresponse import YelpResponse
 from urllib import quote
 from urllib import urlencode
 
@@ -56,9 +55,25 @@ class YelpClient(object):
 
         print("Searching for business: " + business_id)
         response = self._get_request(path)
-        yelp_response = YelpResponse(response['id'], response['name'], response['image_url'],
-                                     response['is_closed'], response['url'], response['price'],
-                                     response['rating'], response['review_count'], response['phone'],
-                                     response['photos'], response['hours'], response['categories'],
-                                     response['location'], response['transactions'])
-        return yelp_response
+        return response
+
+    def _search_restaurants(self, location, radius, limit, **kwargs):
+        print('Searching for restaurants')
+        url_params = {
+            'term': 'restaurants',
+            'location': location.replace(' ', '+'),
+            'radius': radius,
+            'limit': limit
+        }
+
+        if kwargs is not None:
+            for key, value in kwargs.iteritems():
+                url_params[key] = value
+
+        print('Optional params: ' + str(url_params))
+
+        response = self._get_request(BUSINESS_SEARCH_PATH, url_params)
+        return response['businesses']
+
+    def search_restaurants(self, location, radius, limit, **kwargs):
+        return self._search_restaurants(location, radius, limit, **kwargs)

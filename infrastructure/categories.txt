@@ -1,0 +1,393 @@
+Afghan 
+African 
+Senegalese 
+South African 
+American 
+American 
+Andalusian 
+Arabian 
+Arab Pizza 
+Argentine 
+Armenian 
+Asian Fusion 
+Asturian 
+Australian 
+Austrian 
+Baguettes 
+Bangladeshi 
+Barbeque 
+Basque 
+Bavarian 
+Beer Garden 
+Beer Hall 
+Beisl 
+Belgian 
+Flemish 
+Bistros 
+Black Sea 
+Brasseries 
+Brazilian 
+Brazilian Empanadas 
+Central Brazilian 
+Northeastern Brazilian 
+Northern Brazilian 
+Rodizios 
+Breakfast & Brunch 
+British 
+Buffets 
+Bulgarian 
+Burgers 
+Burmese 
+Cafes 
+Themed Cafes 
+Cafeteria 
+Cajun/Creole 
+Cambodian 
+Canadian 
+Canteen 
+Caribbean 
+Dominican 
+Haitian 
+Puerto Rican 
+Trinidadian 
+Catalan 
+Cheesesteaks 
+Chicken Shop 
+Chicken Wings 
+Chilean 
+Chinese 
+Cantonese 
+Congee 
+Dim Sum 
+Fuzhou 
+Hainan 
+Hakka 
+Henghwa 
+Hokkien 
+Hunan 
+Pekinese 
+Shanghainese 
+Szechuan 
+Teochew 
+Comfort Food 
+Corsican 
+Creperies 
+Cuban 
+Curry Sausage 
+Cypriot 
+Czech 
+Czech/Slovakian 
+Danish 
+Delis 
+Diners 
+Dinner Theater 
+Dumplings 
+Eastern European 
+Ethiopian 
+Fast Food 
+Filipino 
+Fischbroetchen 
+Fish & Chips 
+Flatbread 
+Fondue 
+Food Court 
+Food Stands 
+Freiduria 
+French 
+Alsatian 
+Auvergnat 
+Berrichon 
+Bourguignon 
+Mauritius 
+Nicoise 
+Provencal 
+Reunion 
+French Southwest 
+Galician 
+Game Meat 
+Gastropubs 
+Georgian 
+German 
+Baden 
+Eastern German 
+Hessian 
+Northern German 
+Palatine 
+Rhinelandian 
+Giblets 
+Gluten-Free 
+Greek 
+Guamanian 
+Halal 
+Hawaiian 
+Heuriger 
+Himalayan/Nepalese 
+Honduran 
+Hong Kong Style Cafe 
+Hot Dogs 
+Hot Pot 
+Hungarian 
+Iberian 
+Indian 
+Indonesian 
+International 
+Irish 
+Island Pub 
+Israeli 
+Italian 
+Abruzzese 
+Altoatesine 
+Apulian 
+Calabrian 
+Cucina campana 
+Emilian 
+Friulan 
+Ligurian 
+Lumbard 
+Napoletana 
+Piemonte 
+Roman 
+Sardinian 
+Sicilian 
+Tuscan 
+Venetian 
+Japanese 
+Blowfish 
+Conveyor Belt Sushi 
+Donburi 
+Gyudon 
+Oyakodon 
+Hand Rolls 
+Horumon 
+Izakaya 
+Japanese Curry 
+Kaiseki 
+Kushikatsu 
+Oden 
+Okinawan 
+Okonomiyaki 
+Onigiri 
+Ramen 
+Robatayaki 
+Soba 
+Sukiyaki 
+Takoyaki 
+Tempura 
+Teppanyaki 
+Tonkatsu 
+Udon 
+Unagi 
+Western Style Japanese Food 
+Yakiniku 
+Yakitori 
+Jewish 
+Kebab 
+Kopitiam 
+Korean 
+Kosher 
+Kurdish 
+Laos 
+Laotian 
+Latin American 
+Colombian 
+Salvadoran 
+Venezuelan 
+Live/Raw Food 
+Lyonnais 
+Malaysian 
+Mamak 
+Nyonya 
+Meatballs 
+Mediterranean 
+Falafel 
+Mexican 
+Eastern Mexican 
+Jaliscan 
+Northern Mexican 
+Oaxacan 
+Pueblan 
+Tacos 
+Tamales 
+Yucatan 
+Middle Eastern 
+Egyptian 
+Lebanese 
+Milk Bars 
+Modern Australian 
+Modern European 
+Mongolian 
+Moroccan 
+New Mexican Cuisine 
+New Zealand 
+Nicaraguan 
+Night Food 
+Nikkei 
+Noodles 
+Norcinerie 
+Open Sandwiches 
+Oriental 
+PF/Comercial 
+Pakistani 
+Pan Asian 
+Parent Cafes 
+Parma 
+Persian/Iranian 
+Peruvian 
+Pita 
+Pizza 
+Polish 
+Pierogis 
+Pop-Up Restaurants 
+Portuguese 
+Alentejo 
+Algarve 
+Azores 
+Beira 
+Fado Houses 
+Madeira 
+Minho 
+Ribatejo 
+Tras-os-Montes 
+Potatoes 
+Poutineries 
+Pub Food 
+Rice 
+Romanian 
+Rotisserie Chicken 
+Russian 
+Salad 
+Sandwiches 
+Scandinavian 
+Schnitzel 
+Scottish 
+Seafood 
+Serbo Croatian 
+Signature Cuisine 
+Singaporean 
+Slovakian 
+Soul Food 
+Soup 
+Southern 
+Spanish 
+Arroceria / Paella 
+Sri Lankan 
+Steakhouses 
+Supper Clubs 
+Sushi Bars 
+Swabian 
+Swedish 
+Swiss Food 
+Syrian 
+Tabernas 
+Taiwanese 
+Tapas Bars 
+Tapas/Small Plates 
+Tavola Calda 
+Tex-Mex 
+Thai 
+Traditional Norwegian 
+Traditional Swedish 
+Trattorie 
+Turkish 
+Chee Kufta 
+Gozleme 
+Homemade Food 
+Lahmacun 
+Ottoman Cuisine 
+Turkish Ravioli 
+Ukrainian 
+Uzbek 
+Vegan 
+Vegetarian 
+Venison 
+Vietnamese 
+Waffles 
+Wok 
+Wraps 
+Yugoslav 
+Acai Bowls 
+Backshop 
+Bagels 
+Bakeries 
+Beer, Wine & Spirits 
+Bento 
+Beverage Store 
+Breweries 
+Bubble Tea 
+Butcher 
+CSA 
+Chimney Cakes 
+Churros 
+Cideries 
+Coffee & Tea 
+Coffee & Tea Supplies 
+Coffee Roasteries 
+Convenience Stores 
+Cupcakes 
+Custom Cakes 
+Delicatessen 
+Desserts 
+Distilleries 
+Do-It-Yourself Food 
+Donairs 
+Donuts 
+Empanadas 
+Ethic Grocery 
+Farmers Market 
+Fishmonger 
+Food Delivery Services 
+Food Trucks 
+Friterie 
+Gelato 
+Grocery 
+Hawker Centre 
+Honey 
+Ice Cream & Frozen Yogurt 
+Imported Food 
+International Grocery 
+Internet Cafes 
+Japanese Sweets 
+Taiyaki 
+Juice Bars & Smoothies 
+Kiosk 
+Kombucha 
+Milkshake Bars 
+Mulled Wine 
+Nasi Lemak 
+Organic Stores 
+Panzerotti 
+Parent Cafes 
+Patisserie/Cake Shop 
+Piadina 
+Poke 
+Pretzels 
+Salumerie 
+Shaved Ice 
+Shaved Snow 
+Smokehouse 
+Specialty Food 
+Candy Stores 
+Cheese Shops 
+Chocolatiers & Shops 
+Dagashi 
+Dried Fruit 
+Frozen Food 
+Fruits & Veggies 
+Health Markets 
+Herbs & Spices 
+Macarons 
+Meat Shops 
+Olive Oil 
+Pasta Shops 
+Popcorn Shops 
+Seafood Markets 
+Tofu Shops 
+Street Vendors 
+Sugar Shacks 
+Tea Rooms 
+Torshi 
+Tortillas 
+Water Stores 
+Wineries 
+Wine Tasting Room 
+Zapiekanka 
