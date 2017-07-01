@@ -4,7 +4,7 @@ setup(
     name='yumbot',
     version='',
     packages=[''],
-    package_dir={'': 'yumbot'},
+    package_dir={'': '.'},
     url='',
     license='',
     author='Dale',
