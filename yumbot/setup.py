@@ -12,6 +12,7 @@ setup(
     description='',
     install_requires=[
         'requests',
-        'boto3'
+        'boto3',
+        'pillow'
     ]
 )

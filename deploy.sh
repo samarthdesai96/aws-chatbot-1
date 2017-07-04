@@ -9,8 +9,10 @@ package_lambda() {
     cd yumbot
     virtualenv env
     source env/bin/activate
-    pip install -e .
-    zip ../lambda.zip __init__.py main.py opentableclient.py yelpclient.py
+    pip install requests
+    pip install pillow
+    pip install boto3
+    zip -r ../lambda.zip ./ $VIRTUAL_ENV/lib/python2.7/site-packages
     cd ../
 }
 
@@ -27,25 +29,27 @@ create() {
 # Create Lambda function with zipped source
     package_lambda
     aws lambda create-function \
-	--function-name aws-chatbot-lambda \
-	--runtime python2.7 \
-	--role arn:aws:iam::729905221641:role/aws-chatbot-lambda \
-	--zip-file fileb://lambda.zip \
-	--handler main.lambda_handler
+        --function-name aws-chatbot-lambda \
+        --runtime python2.7 \
+        --role arn:aws:iam::729905221641:role/aws-chatbot-lambda \
+        --zip-file fileb://lambda.zip \
+        --environment Variables="{YELP_CLIENT_ID=${YELP_CLIENT_ID},YELP_CLIENT_SECRET=${YELP_CLIENT_SECRET}}" \
+        --handler main.lambda_handler
 
-	aws lambda add-permission \
-	--function-name aws-chatbot-lambda \
-	--statement-id LambdaLex \
-	--action lambda:InvokeFunction \
-	--principal lex.amazonaws.com \
-	--source-arn "arn:aws:lex:us-east-1:729905221641:intent:*"
+    aws lambda add-permission \
+        --function-name aws-chatbot-lambda \
+        --statement-id LambdaLex \
+        --action lambda:InvokeFunction \
+        --principal lex.amazonaws.com \
+        --source-arn "arn:aws:lex:us-east-1:729905221641:intent:*"
 }
 
 update_config() {
     echo "Updating Lambda function config..."
     aws lambda update-function-configuration \
-	--function-name aws-chatbot-lambda \
-	--handler main.lambda_handler
+        --function-name aws-chatbot-lambda \
+        --environment Variables="{YELP_CLIENT_ID=${YELP_CLIENT_ID},YELP_CLIENT_SECRET=${YELP_CLIENT_SECRET}}" \
+        --handler main.lambda_handler
 }
 
 update_code() {
@@ -54,9 +58,9 @@ update_code() {
     echo "Updating Lambda function code..."
     echo
     aws lambda update-function-code \
-    --function-name aws-chatbot-lambda \
-    --zip-file fileb://lambda.zip \
-    --publish
+        --function-name aws-chatbot-lambda \
+        --zip-file fileb://lambda.zip \
+        --publish
 }
 
 if [[ $1 == "create" ]]; then
